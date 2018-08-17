@@ -6,7 +6,10 @@ class Post
   def self.all
     @@all
   end
-  
+  def self.all
+    @@all.each do |song|
+      puts song.name
+    end
    def author_name
     self.author ? self.author.name : nil
   end
